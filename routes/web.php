@@ -16,4 +16,5 @@
 // });
 
 Route::resource('persentase','PersentaseController')->except(['show','update']);
-Route::resource('statistik','StatistikController')->except(['show','update']);
+Route::get('/statistik/show/{id}', 'StatistikController@show');
+Route::resource('statistik','StatistikController')->except(['update']);

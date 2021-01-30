@@ -260,8 +260,8 @@
 
                 //set value masing-masing id berdasarkan data yg diperoleh dari ajax get request diatas               
                 $('#id').val(data.id);
-                $('#total_penerima').val(data.total_penerima);
-                $('#id_kabupaten').val(data.id_kabupaten);
+                $('#keterangan').val(data.keterangan);
+                $('#file').val(data.file);
                 $('#id_jenis_bantuan').val(data.id_jenis_bantuan);
             })
         });

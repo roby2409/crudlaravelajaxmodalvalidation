@@ -19,7 +19,10 @@ class StatistikController extends Controller
                 ->addColumn('action', function ($data) {
                     $button = '<a href="javascript:void(0)" data-toggle="tooltip"  data-id="' . $data->id . '" data-original-title="Edit" class="edit btn btn-info btn-sm edit-post"><i class="far fa-edit"></i> Edit</a>';
                     $button .= '&nbsp;&nbsp;';
-                    $button .= '<button type="button" name="delete" id="' . $data->id . '" class="delete btn btn-danger btn-sm"><i class="far fa-trash-alt"></i> Delete</button>';
+                    $button .= '<button type="button" name="delete" id="' . $data->id . '" class="delete btn btn-danger 
+                    btn-sm"><i class="far fa-trash-alt"></i> Delete</button>';
+                    $button .= '&nbsp;&nbsp;';
+                    $button .= '<a href ="/statistik/show/'. $data->id .'" class="show btn btn-success btn-sm show-post"><i class="far fa-trash-alt"></i> Show</button>';
                     return $button;
                 })
                 ->rawColumns(['action'])
@@ -89,6 +92,10 @@ class StatistikController extends Controller
     public function show($id)
     {
         //
+        $where = array('id' => $id);
+        $statistik  = Statistik::where($where)->first();
+
+        return view('show', compact('statistik'));
 
     }
 
@@ -100,7 +107,10 @@ class StatistikController extends Controller
      */
     public function edit($id)
     {
-        //
+        $where = array('id' => $id);
+        $post  = Statistik::where($where)->first();
+
+        return response()->json($post);
     }
 
     /**
@@ -123,6 +133,8 @@ class StatistikController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Statistik::where('id', $id)->delete();
+
+        return response()->json($post);
     }
 }
