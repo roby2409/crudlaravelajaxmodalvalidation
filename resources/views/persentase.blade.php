@@ -77,8 +77,8 @@
                                 <div class="form-group">
                                     <label for="name" class="col-sm-12 control-label">Total Penerima</label>
                                     <div class="col-sm-12">
-                                        <input type="number" class="form-control" id="total_penerima" name="total_penerima"
-                                            value="" required>
+                                        <input type="number" class="form-control" id="total_penerima"
+                                            name="total_penerima" value="" required>
                                     </div>
                                 </div>
 
@@ -87,8 +87,10 @@
                                     <div class="col-sm-12">
                                         <select name="id_kabupaten" id="id_kabupaten" class="form-control required">
                                             <option value="">Pilih Kabupaten</option>
-                                            <option value="1">Lubuk Linggau</option>
-                                            <option value="2">Palembang</option>
+                                            @foreach ($list_kabupaten as $kabupaten)
+                                                <option value="{{ $kabupaten->id }}">
+                                                    {{ $kabupaten->nama_kabupaten }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
@@ -96,10 +98,13 @@
                                 <div class="form-group">
                                     <label for="name" class="col-sm-12 control-label">Kabupaten</label>
                                     <div class="col-sm-12">
-                                        <select name="id_jenis_bantuan" id="id_jenis_bantuan" class="form-control required">
+                                        <select name="id_jenis_bantuan" id="id_jenis_bantuan"
+                                            class="form-control required">
                                             <option value="">Pilih Jenis Bantuan</option>
-                                            <option value="1">Bantuan 1</option>
-                                            <option value="2">Bantuan 2</option>
+                                            @foreach ($list_jenis_bantuan as $jenis_bantuan)
+                                                <option value="{{ $jenis_bantuan->id }}">
+                                                    {{ $jenis_bantuan->nama_jenis_bantuan }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
@@ -107,32 +112,36 @@
                                 <div class="form-group">
                                     <label for="name" class="col-sm-12 control-label">Total Penerima terialisasi</label>
                                     <div class="col-sm-12">
-                                        <input type="number" class="form-control" id="total_penerima_terealisasi" name="total_penerima_terealisasi" value=""
-                                            required>
+                                        <input type="number" class="form-control" id="total_penerima_terealisasi"
+                                            name="total_penerima_terealisasi" value="" required>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="name" class="col-sm-12 control-label">Total Penerima Terealisasi Persen</label>
+                                    <label for="name" class="col-sm-12 control-label">Total Penerima Terealisasi
+                                        Persen</label>
                                     <div class="col-sm-12">
-                                        <input type="number" class="form-control" id="total_penerima_terealisasi_persen" name="total_penerima_terealisasi_persen" value=""
-                                            required>
+                                        <input type="number" class="form-control" id="total_penerima_terealisasi_persen"
+                                            name="total_penerima_terealisasi_persen" value="" required>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="name" class="col-sm-12 control-label">Total Penerima Dalam Antrian</label>
+                                    <label for="name" class="col-sm-12 control-label">Total Penerima Dalam
+                                        Antrian</label>
                                     <div class="col-sm-12">
-                                        <input type="number" class="form-control" id="total_penerima_dalam_antrian" name="total_penerima_dalam_antrian" value=""
-                                            required>
+                                        <input type="number" class="form-control" id="total_penerima_dalam_antrian"
+                                            name="total_penerima_dalam_antrian" value="" required>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="name" class="col-sm-12 control-label">Total Penerima Dalam Antrian Persen</label>
+                                    <label for="name" class="col-sm-12 control-label">Total Penerima Dalam Antrian
+                                        Persen</label>
                                     <div class="col-sm-12">
-                                        <input type="number" class="form-control" id="total_penerima_dalam_antrian_persen" name="total_penerima_dalam_antrian_persen" value=""
-                                            required>
+                                        <input type="number" class="form-control"
+                                            id="total_penerima_dalam_antrian_persen"
+                                            name="total_penerima_dalam_antrian_persen" value="" required>
                                     </div>
                                 </div>
 
@@ -285,7 +294,7 @@
                             $('#tambah-edit-modal').modal('hide'); //modal hide
                             $('#tombol-simpan').html('Simpan'); //tombol simpan
                             var oTable = $('#table_persentase')
-                        .dataTable(); //inialisasi datatable
+                                .dataTable(); //inialisasi datatable
                             oTable.fnDraw(false); //reset datatable
                             iziToast.success({ //tampilkan iziToast dengan notif data berhasil disimpan pada posisi kanan bawah
                                 title: 'Data Berhasil Disimpan',

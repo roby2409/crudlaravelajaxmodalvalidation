@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Persentase;
+use App\Kabupaten;
+use App\Jenis_bantuan;
 use Yajra\DataTables\Facades\DataTables;
 
 class PersentaseController extends Controller
@@ -11,6 +13,8 @@ class PersentaseController extends Controller
     public function index(Request $request)
     {
         $list_persentase = Persentase::all();
+        $list_kabupaten = Kabupaten::all();
+        $list_jenis_bantuan = Jenis_bantuan::all();
         if ($request->ajax()) {
             return datatables()->of($list_persentase)
                 ->addColumn('action', function ($data) {
@@ -24,7 +28,7 @@ class PersentaseController extends Controller
                 ->make(true);
         }
 
-        return view('persentase');
+        return view('persentase', compact('list_kabupaten', 'list_jenis_bantuan'));
     }
 
     /**
