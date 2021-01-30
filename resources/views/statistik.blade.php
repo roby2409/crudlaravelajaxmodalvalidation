@@ -17,15 +17,12 @@
 
 <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h5 class="my-0 mr-md-auto font-weight-normal">LARAVEL AJAX CRUD YAJRA DATATABLE </h5>
+        <h5 class="my-0 mr-md-auto font-weight-normal">LARAVEL AJAX modal Validation dan Upload</h5>
         <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="#">Laravel</a>
-            <a class="p-2 text-dark" href="#">Codeigniter</a>
-            <a class="p-2 text-dark" href="#">Jquery</a>
-            <a class="p-2 text-dark" href="#">Vue Js</a>
+            <a class="p-2 text-dark" href="{{ route('statistik.index') }}">Statistik</a>
+            <a class="p-2 text-dark" href="{{ route('persentase.index') }}">Persentase</a>
         </nav>
-        <a class="btn btn-outline-primary" target="_blank"
-            href="https://www.youtube.com/channel/UCXFdc68srZQ-ok4I1-pHs2g?view_as=subscriber">Tahu Coding</a>
+
     </div>
 
     <!-- MULAI CONTAINER -->
