@@ -12,7 +12,8 @@ class PersentaseController extends Controller
 {
     public function index(Request $request)
     {
-        $list_persentase = Persentase::all();
+        // $list_persentase = Persentase::all();
+        $list_persentase = Persentase::with('kabupaten')->select('persentase.*');
         $list_kabupaten = Kabupaten::all();
         $list_jenis_bantuan = Jenis_bantuan::all();
         if ($request->ajax()) {
@@ -22,6 +23,12 @@ class PersentaseController extends Controller
                     $button .= '&nbsp;&nbsp;';
                     $button .= '<button type="button" name="delete" id="' . $data->id . '" class="delete btn btn-danger btn-sm"><i class="far fa-trash-alt"></i> Delete</button>';
                     return $button;
+                })
+                ->editColumn('id_kabupaten', function($query){
+                    return $query->kabupaten->nama_kabupaten;
+                })
+                ->editColumn('id_jenis_bantuan', function($query){
+                    return $query->jenis_bantuan->nama_jenis_bantuan;
                 })
                 ->rawColumns(['action'])
                 ->addIndexColumn()
