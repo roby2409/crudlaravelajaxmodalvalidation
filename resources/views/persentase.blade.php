@@ -42,7 +42,7 @@
                 <table class="table table-striped table-bordered table-sm" id="table_persentase">
                     <thead>
                         <tr>
-                            <th>Nama</th>
+                            <th>Total Penerima</th>
                             <th>Kabupaten</th>
                             <th>Jenis Bantuan</th>
                             <th>Total Penerima Terealisasi</th>

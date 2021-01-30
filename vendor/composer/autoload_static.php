@@ -421,6 +421,13 @@ class ComposerStaticInit966c3c69f22f30ae8b6b083902941c9b
     );
 
     public static $prefixesPsr0 = array (
+        'j' => 
+        array (
+            'jjalvarezl\\PDFjsViewerBundle' => 
+            array (
+                0 => __DIR__ . '/..' . '/jjalvarezl/pdfjs-viewer-bundle',
+            ),
+        ),
         'M' => 
         array (
             'Mockery' => 
@@ -446,6 +453,7 @@ class ComposerStaticInit966c3c69f22f30ae8b6b083902941c9b
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\PersentaseController' => __DIR__ . '/../..' . '/app/Http/Controllers/PersentaseController.php',
+        'App\\Http\\Controllers\\StatistikController' => __DIR__ . '/../..' . '/app/Http/Controllers/StatistikController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -4637,6 +4645,11 @@ class ComposerStaticInit966c3c69f22f30ae8b6b083902941c9b
         'Yajra\\DataTables\\Utilities\\Config' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Config.php',
         'Yajra\\DataTables\\Utilities\\Helper' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Helper.php',
         'Yajra\\DataTables\\Utilities\\Request' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Request.php',
+        'jjalvarezl\\PDFjsViewerBundle\\Controller\\ViewerController' => __DIR__ . '/..' . '/jjalvarezl/pdfjs-viewer-bundle/jjalvarezl/PDFjsViewerBundle/Controller/ViewerController.php',
+        'jjalvarezl\\PDFjsViewerBundle\\DependencyInjection\\Configuration' => __DIR__ . '/..' . '/jjalvarezl/pdfjs-viewer-bundle/jjalvarezl/PDFjsViewerBundle/DependencyInjection/Configuration.php',
+        'jjalvarezl\\PDFjsViewerBundle\\DependencyInjection\\jjalvarezlPDFjsViewerExtension' => __DIR__ . '/..' . '/jjalvarezl/pdfjs-viewer-bundle/jjalvarezl/PDFjsViewerBundle/DependencyInjection/jjalvarezlPDFjsViewerExtension.php',
+        'jjalvarezl\\PDFjsViewerBundle\\Tests\\Controller\\DefaultControllerTest' => __DIR__ . '/..' . '/jjalvarezl/pdfjs-viewer-bundle/jjalvarezl/PDFjsViewerBundle/Tests/Controller/DefaultControllerTest.php',
+        'jjalvarezl\\PDFjsViewerBundle\\jjalvarezlPDFjsViewerBundle' => __DIR__ . '/..' . '/jjalvarezl/pdfjs-viewer-bundle/jjalvarezl/PDFjsViewerBundle/jjalvarezlPDFjsViewerBundle.php',
         'persentaseSeeder' => __DIR__ . '/../..' . '/database/seeds/persentaseSeeder.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',

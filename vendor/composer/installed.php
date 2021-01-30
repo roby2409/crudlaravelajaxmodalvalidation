@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => '29d1cb75cd0fbc60702b38a04cbad9701b79bb0d',
+    'reference' => '8f51c8ae0b14057e86470c701c14d59302ebbbf7',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -132,6 +132,15 @@
       array (
       ),
       'reference' => '848d8125239d7dbf8ab25cb7f054f1a630e68c2e',
+    ),
+    'goodnesskay/laravelpdfviewer' => 
+    array (
+      'pretty_version' => 'v1.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f0808b98aab3c3dc080847e22ee7cc614bb6ed19',
     ),
     'hamcrest/hamcrest-php' => 
     array (
@@ -356,6 +365,15 @@
       ),
       'reference' => '9f7a229a69d52506914b4bc61bfdb199d90c5547',
     ),
+    'jjalvarezl/pdfjs-viewer-bundle' => 
+    array (
+      'pretty_version' => 'v3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '56853183dca84ee0c6a5c04ebe111bc96a845d76',
+    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
@@ -374,12 +392,12 @@
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => '29d1cb75cd0fbc60702b38a04cbad9701b79bb0d',
+      'reference' => '8f51c8ae0b14057e86470c701c14d59302ebbbf7',
     ),
     'laravel/tinker' => 
     array (

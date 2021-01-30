@@ -22,7 +22,7 @@ class StatistikController extends Controller
                     $button .= '<button type="button" name="delete" id="' . $data->id . '" class="delete btn btn-danger 
                     btn-sm"><i class="far fa-trash-alt"></i> Delete</button>';
                     $button .= '&nbsp;&nbsp;';
-                    $button .= '<a href ="/statistik/show/'. $data->id .'" class="show btn btn-success btn-sm show-post"><i class="far fa-trash-alt"></i> Show</button>';
+                    $button .= '<a href ="pdfjs/web/viewer.html?file=%2Fdata_file/'.$data->file .'" class="show btn btn-success btn-sm show-post"><i class="far fa-trash-alt"></i> Presentasi</button>';
                     return $button;
                 })
                 ->rawColumns(['action'])

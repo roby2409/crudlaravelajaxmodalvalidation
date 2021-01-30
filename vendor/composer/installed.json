@@ -818,6 +818,47 @@
             "install-path": "../fzaninotto/faker"
         },
         {
+            "name": "goodnesskay/laravelpdfviewer",
+            "version": "v1.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/goodnesskay/LARAVEL-PDF-VIEWER.git",
+                "reference": "f0808b98aab3c3dc080847e22ee7cc614bb6ed19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/goodnesskay/LARAVEL-PDF-VIEWER/zipball/f0808b98aab3c3dc080847e22ee7cc614bb6ed19",
+                "reference": "f0808b98aab3c3dc080847e22ee7cc614bb6ed19",
+                "shasum": ""
+            },
+            "time": "2017-05-23T07:24:26+00:00",
+            "type": "laravel-package",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Goodness Toluwanimi Kayode",
+                    "email": "gtkbrain@gmail.com"
+                }
+            ],
+            "description": "A Laravel Package for viewing PDF files or documents on Web App",
+            "keywords": [
+                "ViewerJS",
+                "laravel",
+                "laravel-viewerJS",
+                "pdf-viewer"
+            ],
+            "support": {
+                "issues": "https://github.com/goodnesskay/LARAVEL-PDF-VIEWER/issues",
+                "source": "https://github.com/goodnesskay/LARAVEL-PDF-VIEWER/tree/master"
+            },
+            "install-path": "../goodnesskay/laravelpdfviewer"
+        },
+        {
             "name": "hamcrest/hamcrest-php",
             "version": "v2.0.1",
             "version_normalized": "2.0.1.0",
@@ -964,6 +1005,61 @@
             ],
             "description": "Highlight PHP code in terminal",
             "install-path": "../jakub-onderka/php-console-highlighter"
+        },
+        {
+            "name": "jjalvarezl/pdfjs-viewer-bundle",
+            "version": "v3.0.0",
+            "version_normalized": "3.0.0.0",
+            "target-dir": "jjalvarezl/PDFjsViewerBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jjalvarezl/JjalvarezlPDFjsViewerBundle.git",
+                "reference": "56853183dca84ee0c6a5c04ebe111bc96a845d76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jjalvarezl/JjalvarezlPDFjsViewerBundle/zipball/56853183dca84ee0c6a5c04ebe111bc96a845d76",
+                "reference": "56853183dca84ee0c6a5c04ebe111bc96a845d76",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "time": "2018-03-01T18:43:45+00:00",
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "jjalvarezl\\PDFjsViewerBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jjalvarezl",
+                    "email": "jhon.jairo.alvarez.londono@gmail.com"
+                }
+            ],
+            "description": "This bundle provides an integration of pdf.js from mozilla with Symfony 3 framework and customizable parameters on server side",
+            "keywords": [
+                "pdf viewer",
+                "pdfjs",
+                "symfony",
+                "symfony3"
+            ],
+            "support": {
+                "issues": "https://github.com/jjalvarezl/JjalvarezlPDFjsViewerBundle/issues",
+                "source": "https://github.com/jjalvarezl/JjalvarezlPDFjsViewerBundle/tree/sf3"
+            },
+            "install-path": "../jjalvarezl/pdfjs-viewer-bundle/jjalvarezl/PDFjsViewerBundle"
         },
         {
             "name": "laravel/framework",
