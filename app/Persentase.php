@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Persentase extends Model
 {
     protected $table = "persentase";
+    public $timestamps = true;
 
     protected $guarded = [];
 
