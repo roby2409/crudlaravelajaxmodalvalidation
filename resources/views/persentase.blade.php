@@ -93,7 +93,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="name" class="col-sm-12 control-label">Kabupaten</label>
+                                    <label for="name" class="col-sm-12 control-label">Jenis Bantuan</label>
                                     <div class="col-sm-12">
                                         <select name="id_jenis_bantuan" id="id_jenis_bantuan"
                                             class="form-control required">
